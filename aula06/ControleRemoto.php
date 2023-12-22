@@ -1,5 +1,6 @@
 <?php 
-    class ControleRemoto {
+    require_once 'Controlador.php';
+    class ControleRemoto implements Controlador {
         private $volume;
         private $ligado;
         private $tocando;
@@ -13,14 +14,17 @@
         }
 
         public function abrirMenu() {
-            echo $this->getLigado();
-            echo $this->getVolume();
-
-            echo $this->getTocando();
+            echo "<br>Está Ligado?: " . ($this->getLigado()?"SIM":"NÂO");
+            echo "<br>Está Tocando?: " . ($this->getTocando()?"SIM":"NÂO");
+            echo "<br>Volume: " . $this->getVolume();
+            for($i=0; $i <= $this->getVolume(); $i+=10) {
+                echo "|";
+            }
+            echo "<br>";
         }
 
         public function fecharMenu() {
-            echo "Fechando Menu...";
+            echo "<br>Fechando Menu...";
         }
 
         public function maisVolume() {
@@ -36,23 +40,31 @@
         }
 
         public function ligarMudo() {
-            echo "ligado";
+            if ($this->getLigado() && $this->getVolume() > 0) {
+                $this->setVolume(0);
+            }
         }
 
         public function desligarMudo() {
-            echo "desligado";
+            if ($this->getLigado() && $this->getVolume() == 0) {
+                $this->setVolume(50);
+            }
         }
 
         public function play() {
-            echo "play";
+            if ($this->getLigado() && ! ($this->getTocando())) {
+                $this->setTocano(true);
+            } 
         }
 
         public function pause() {
-            echo "pause";
+            if ($this->getLigado() && $this->getTocando()) {
+                $this->setTocano(false);
+            }
         }
         
         
-        private function __construct() {
+        public function __construct() {
             $this->setVolume(50);
             $this->setLigado(false);
             $this->setTocano(false);
