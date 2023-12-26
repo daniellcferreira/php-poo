@@ -1,4 +1,5 @@
 <?php 
+
     class Lutador {
         private $nome;
         private $nacionalidade;
@@ -56,43 +57,43 @@
             $this->derrotas = $d;
         }
 
-        private function getNome() {
+         function getNome() {
             return $this->nome;
         }
-        private function setNome($n) {
+         function setNome($n) {
             $this->nome = $n;
         }
 
-        private function getNacionalidade() {
+         function getNacionalidade() {
             return $this-> nacionalidade;
         }
-        private function setNacionalidade($s) {
+         function setNacionalidade($s) {
             $this->nacionalidade = $s;
         }
 
-        private function getIdade() {
+         function getIdade() {
             return $this->idade;
         }
-        private function setIdade($i) {
+         function setIdade($i) {
             $this->idade = $i;
         }
 
-        private function getAltura() {
+         function getAltura() {
             return $this->altura;
         }
-        private function setAltura($a) {
+         function setAltura($a) {
             $this->altura = $a;
         }
 
-        private function getPeso() {
+         function getPeso() {
             return $this->peso;
         }
-        private function setPeso($p) {
+         function setPeso($p) {
             $this->peso = $p;
             $this->setCategoria();
         }
 
-        private function getCategoria() {
+        function getCategoria() {
             return $this->categoria;
         }
         private function setCategoria() {
@@ -109,25 +110,26 @@
             }
         }
 
-        private function getVitorias() {
+         function getVitorias() {
             return $this->vitorias;
         }
-        private function setVitorias($v) {
+         function setVitorias($v) {
             $this->vitorias = $v;
         }
 
-        private function getDerrotas() {
+         function getDerrotas() {
             return $this->derrotas;
         }
-        private function setDerrotas($d) {
+         function setDerrotas($d) {
             $this->derrotas = $d;
         }
 
-        private function getEmpates() {
+         function getEmpates() {
             return $this->empates;
         }
-        private function setEmpates($e) {
+         function setEmpates($e) {
             $this->empates = $e;
         }
     }
+    
 ?>
