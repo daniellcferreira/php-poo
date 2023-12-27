@@ -1,10 +1,11 @@
-<?php 
+<?php
+require_once 'Pessoa.php'; 
     class Aluno extends Pessoa {
         private $matr;
         private $curso;
 
         public function cancelarMatr() {
-
+            echo "<p>Matricula será cancelada</p>";
         }
 
         public function getMatr() {

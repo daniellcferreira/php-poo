@@ -5,8 +5,12 @@
         private $sexo;
 
         public function fazerAniv() {
-
+            $this->idade ++;
         }
+
+        public function __construct() {
+            
+        }        
 
         public function getNome() {
             return $this->nome;
