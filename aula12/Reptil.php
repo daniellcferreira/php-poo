@@ -4,15 +4,15 @@ require_once 'Animal.php';
         private $corEscama;
 
         public function locomever() {
-            echo "Rastejando";
+            echo "<p>Rastejando</p>";
         }
 
         public function alimentar() {
-            echo "Comendo Vegetais";
+            echo "<p>Comendo Vegetais</p>";
         }
 
         public function emitirSom() {
-            echo "Som de reptil";
+            echo "<p>Som de reptil</p>";
         }
 
         public function getCorEscama() {

@@ -4,15 +4,15 @@ require_once 'Animal.php';
         private $corPelo;
 
         public function locomever() {
-            echo "Correndo";
+            echo "<p>Correndo</p>";
         }
 
         public function alimentar() {
-            echo "Mamando";
+            echo "<p>Mamando</p>";
         }
 
         public  function emitirSom() {
-            echo "som de Mamifero";
+            echo "<p>som de Mamifero</p>";
         }
 
         public function getCorPelo() {

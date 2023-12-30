@@ -2,11 +2,11 @@
 require_once 'Mamifero.php';
     class Cachorro extends Mamifero {
         public function enterrarOsso() {
-            echo "Enterrando o osso";
+            echo "<p>Enterrando o osso</p>";
         }
 
         public function abanarRabo() {
-            echo "Abanando o rabo";
+            echo "<p>Abanando o rabo</p>";
         }
     }
 ?>

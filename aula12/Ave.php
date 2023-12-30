@@ -4,19 +4,19 @@ require_once 'Animal.php';
         private $corPena;
 
         public function locomever() {
-            echo "Voando";
+            echo "<p>Voando</p>";
         }
 
         public function alimentar() {
-            echo "Comendo frutas";
+            echo "<p>Comendo frutas</p>";
         }
 
         public function emitirSom() {
-            echo "Som de ave";
+            echo "<p>Som de ave</p>";
         }
 
         public function fazerNinho() {
-            echo "Contrir um ninho";
+            echo "<p>Contruindo um ninho</p>";
         }
 
         public function getCorPena() {

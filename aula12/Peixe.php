@@ -4,19 +4,27 @@ require_once 'Animal.php';
         private $corEscama;
 
         public function locomever() {
-            echo "Nadando";
+            echo "<p>Nadando</p>";
         }
 
         public function alimentar() {
-            echo "Comendo substancias";
+            echo "<p>Comendo substancias</p>";
         }
 
         public function emitirSom() {
-            echo "Peixe não faz som";
+            echo "<p>Peixe não faz som</p>";
         }
 
         public function soltarBolha() {
-            echo "Soltou uma bolha";
+            echo "<p>Soltou uma bolha</p>";
+        }
+
+        public function getCorEscama() {
+            return $this->corEscama;
+        }
+
+        public function setCorEscama($c) {
+            $this->corEscama = $c;
         }
     }
 ?>

@@ -2,11 +2,11 @@
 require_once 'Mamifero.php';
     class Canguru extends Mamifero {
         public function usarBolsa() {
-            echo "Usando Bolsa";
+            echo "<p>Usando Bolsa</p>";
         }
 
         public function locomever() {
-            echo "Saltando";    
+            echo "<p>Saltando</p>";    
         }
     }
 
